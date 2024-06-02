@@ -23,8 +23,8 @@ predictor_file = "C:\prt\shape_predictor_68_face_landmarks.dat\shape_predictor_6
 predictor = dlib.shape_predictor(predictor_file)
 
 number_closed = 0
-min_EAR = 0.22
-closed_limit = 22 #-- 졸음으로 인식할 count 수
+min_EAR = 0.22 # 눈 감음으로 인식할 기준, 인식 정도에 따라 수정
+closed_limit = 22 # 졸음으로 인식할 눈 감음 count, 이 경우 2.2초이 인식 정도에 따라 수정
 show_frame = None
 sign = None
 color = None
